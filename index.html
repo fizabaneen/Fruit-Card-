@@ -7,12 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="fruit-card">
-            <img src="Asstes/Green-Apple.png" alt="Green Apple">
-            <h1>Delicious Apples</h1>
-            <p>These are some of the most delicious apples you've ever tasted!</p>
-        </div>
-    </div>
+
+    <main class="main-container">
+        <section class="image-card" id="imageCardBg" aria-label="Apple images">
+            <div class="card-header">
+                <button class="icon-button" type="button" aria-label="Share product">↗</button>
+                <button class="icon-button" type="button" aria-label="Add to favourites">♡</button>
+            </div>
+            <div class="main-img-container">
+                <img id="mainImage" src="Asstes/Green-Apple.png" alt="Green apple with a slice">
+            </div>
+            <div class="thumbnail-container">
+                <button class="thumb active" type="button" aria-label="Whole apple"><img src="Asstes/Green-Apple.png" alt="Whole green apple"></button>
+                <button class="thumb" type="button" aria-label="Apple slice"><img src="Asstes/Half_apple.png" alt="Apple slice"></button>
+                <button class="thumb" type="button" aria-label="Apple from above"><img src="Asstes/full.webp" alt="Apple from above"></button>
+                <button class="thumb" type="button" aria-label="Whole green apple"><img src="Asstes/Green-Apple.png" alt="Green apple"></button>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <h1 class="product-title">Delicious Apples</h1>
+            <p class="product-code">COD: 45999</p>
+
+            <div class="product-price"><span>R$</span> 7.93 <small>/ kg</small></div>
+
+            <div class="section-label">SELECT A COLOR</div>
+            <div class="color-options">
+                <button class="color-circle green active" type="button" aria-label="Green apple"></button>
+                <button class="color-circle yellow" type="button" aria-label="Yellow apple"></button>
+                <button class="color-circle red" type="button" aria-label="Red apple"></button>
+            </div>
+
+            <div class="section-label">BENEFITS</div>
+            <ul class="benefits-list">
+                <li>Apples are nutritious</li>
+                <li>Apples may be good for weight loss</li>
+                <li>Apples may be good for bone health</li>
+                <li>They are linked to a lower risk of diabetes</li>
+            </ul>
+
+            <button class="add-to-cart-btn" type="button">ADD TO CART <span>＋</span></button>
+        </section>
+    </main>
+
+    <p class="footer-credit">Design from <u>dribbble shot</u> of <u>Rodrigo Ramos</u></p>
 </body>
 </html>
