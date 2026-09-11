@@ -49,21 +49,20 @@ body {
 .thumb img { width: 100%; height: 100%; object-fit: contain; }
 
 .product-details { align-self: center; width: 100%; padding: 32px 0; }
-.product-title { color: var(--text); font-size: 22px; }
-.product-code { margin: 2px 0 18px; color: #999; font-size: 9px; letter-spacing: .7px; text-transform: uppercase; }
+.product-title { color: var(--text); font-size: 27px; }
+.product-code { margin: 4px 0 18px; color: #999; font-size: 11px; letter-spacing: .7px; text-transform: uppercase; }
 .product-price { margin-bottom: 22px; color: var(--red); font-size: 36px; }
 .product-price span { margin-right: 4px; font-size: 12px; vertical-align: super; }
 .product-price small { color: #999; font-size: 10px; }
-.section-label { margin-bottom: 8px; color: #aaa; font-size: 8px; font-weight: bold; letter-spacing: 1px; }
+.section-label { margin-bottom: 8px; color: #888; font-size: 11px; font-weight: bold; letter-spacing: 1px; }
 .color-options { display: flex; gap: 9px; margin-bottom: 22px; }
 .color-circle { width: 18px; height: 18px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 1px 4px #0004; cursor: pointer; }
 .color-circle.active { outline: 1px solid #777; }
 .green { background: #9bd329; }
 .yellow { background: #f4c430; }
 .red { background: #d9534f; }
-.benefits-list { margin: 0 0 22px 12px; color: #555; font-size: 9px; line-height: 1.55; }
-.add-to-cart-btn { width: 108px; padding: 11px 8px; border: 0; border-radius: 3px; background: var(--red); color: #fff; font-size: 9px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px #ff333366; }
-.add-to-cart-btn span { float: right; font-size: 13px; }
+.benefits-list { margin: 0 0 22px 15px; color: #555; font-size: 12px; line-height: 1.6; }
+.add-to-cart-btn { padding: 12px 18px; border: 0; border-radius: 3px; background: var(--red); color: #fff; font-size: 12px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px #ff333366; }
 .footer-credit { position: absolute; bottom: 10px; color: #007d41; font-size: 10px; }
 
 @media (max-width: 680px) {
