@@ -15,13 +15,17 @@
                 <button class="icon-button" type="button" aria-label="Add to favourites">♡</button>
             </div>
             <div class="main-img-container">
-                <img id="mainImage" src="Asstes/full.webp" alt="Full green apple">
+                <input id="full-apple" name="apple-view" type="radio" checked>
+                <input id="half-apple" name="apple-view" type="radio">
+                <input id="both-apples" name="apple-view" type="radio">
+                <img class="main-image full-image" src="Asstes/full.webp" alt="Full green apple">
+                <img class="main-image half-image" src="Asstes/Half_apple.png" alt="Half apple">
+                <img class="main-image both-image" src="Asstes/Green-Apple.png" alt="Full and half green apples">
             </div>
             <div class="thumbnail-container">
-                <button class="thumb active"><img src="Asstes/Green-Apple.png" alt="Whole green apple"></button>
-                <button class="thumb"><img src="Asstes/Half_apple.png" alt="Apple slice"></button>
-                <button class="thumb"><img src="Asstes/full.webp" alt="Apple from above"></button>
-                <button class="thumb"><img src="Asstes/Green-Apple.png" alt="Green apple"></button>
+                <label class="thumb" for="full-apple" title="Show full apple"><img src="Asstes/full.webp" alt="Full apple"></label>
+                <label class="thumb" for="half-apple" title="Show half apple"><img src="Asstes/Half_apple.png" alt="Half apple"></label>
+                <label class="thumb" for="both-apples" title="Show both apples"><img src="Asstes/Green-Apple.png" alt="Full and half apples"></label>
             </div>
         </section>
 

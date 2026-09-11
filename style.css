@@ -62,16 +62,46 @@ body {
 }
 
 .main-img-container {
+    position: relative;
     display: grid;
     flex: 1;
     place-items: center;
 }
 
-.main-img-container img {
+.main-img-container input {
+    display: none;
+}
+
+.main-image {
+    position: absolute;
     width: 92%;
     max-height: 220px;
     object-fit: contain;
     filter: drop-shadow(0 8px 8px #0003);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.full-image {
+    opacity: 1;
+}
+
+#half-apple:checked ~ .half-image,
+#both-apples:checked ~ .both-image {
+    opacity: 1;
+}
+
+#full-apple:checked ~ .full-image {
+    opacity: 1;
+}
+
+#half-apple:checked ~ .full-image,
+#both-apples:checked ~ .full-image,
+#full-apple:checked ~ .half-image,
+#both-apples:checked ~ .half-image,
+#full-apple:checked ~ .both-image,
+#half-apple:checked ~ .both-image {
+    opacity: 0;
 }
 
 /* Small image choices */
@@ -98,6 +128,17 @@ body {
 .thumb:hover,
 .thumb.active {
     border-color: #777;
+}
+
+.thumb:hover {
+    transform: translateY(-2px);
+}
+
+body:has(#half-apple:checked) .thumb[for="half-apple"],
+body:has(#both-apples:checked) .thumb[for="both-apples"],
+body:has(#full-apple:checked) .thumb[for="full-apple"] {
+    border-color: #555;
+    box-shadow: 0 0 0 1px #555;
 }
 
 .thumb img {
