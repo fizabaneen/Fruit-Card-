@@ -19,7 +19,7 @@ Fruit-Card/
 ├── Asstes/
 │   └── Images
 │
-├── index.html
+├── index.html  
 ├── style.css
 └── README.md
 ```
