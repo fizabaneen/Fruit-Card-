@@ -1,59 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Delicious Apples</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <main class="main-container">
-        <section class="image-card" id="imageCardBg" aria-label="Apple images">
-            <div class="card-header">
-                <button class="icon-button" type="button" aria-label="Share product">↗</button>
-                <button class="icon-button" type="button" aria-label="Add to favourites">♡</button>
-            </div>
-            <div class="main-img-container">
-                <input id="full-apple" name="apple-view" type="radio">
-                <input id="half-apple" name="apple-view" type="radio">
-                <input id="both-apples" name="apple-view" type="radio" checked>
-                <img class="main-image full-image" src="Asstes/full.webp" alt="Full green apple">
-                <img class="main-image half-image" src="Asstes/Half_apple.png" alt="Half apple">
-                <img class="main-image both-image" src="Asstes/Green-Apple.png" alt="Full and half green apples">
-            </div>
-            <div class="thumbnail-container">
-                <label class="thumb" for="full-apple" title="Show full apple"><img src="Asstes/full.webp" alt="Full apple"></label>
-                <label class="thumb" for="half-apple" title="Show half apple"><img src="Asstes/Half_apple.png" alt="Half apple"></label>
-                <label class="thumb" for="both-apples" title="Show both apples"><img src="Asstes/Green-Apple.png" alt="Full and half apples"></label>
-            </div>
-        </section>
+    <!-- Main White Card -->
+    <div class="main-container">
 
-        <section class="product-details">
-            <h1 class="product-title">Delicious Apples</h1>
-            <p class="product-code">COD: 45999</p>
+        <!-- Apple Image Card -->
+        <div class="image-card">
 
-            <div class="product-price"><span>R$</span> 7.93 <small>/ kg</small></div>
-
-            <div class="section-label">SELECT A COLOR</div>
-            <div class="color-options">
-                <button class="color-circle green active" aria-label="Green apple"></button>
-                <button class="color-circle yellow" aria-label="Yellow apple"></button>
-                <button class="color-circle red" aria-label="Red apple"></button>
+            <!-- Top Icons -->
+            <div class="icons">
+                <span>↗</span>
+                <span>♡</span>
             </div>
 
-            <div class="section-label">BENEFITS</div>
-            <ul class="benefits-list">
+
+            <!-- Radio Buttons -->
+            <input type="radio" name="apple" id="full" checked>
+            <input type="radio" name="apple" id="half">
+            <input type="radio" name="apple" id="both">
+
+
+            <!-- Main Apple Images -->
+            <div class="main-image">
+
+                <img class="full-img"
+                     src="Asstes/full.webp"
+                     alt="Full Apple">
+
+                <img class="half-img"
+                     src="Asstes/Half_apple.png"
+                     alt="Half Apple">
+
+                <img class="both-img"
+                     src="Asstes/Green-Apple.png"
+                     alt="Green Apples">
+
+            </div>
+
+
+            <!-- Small Apple Images -->
+            <div class="thumbnails">
+
+                <label for="full">
+                    <img src="Asstes/full.webp" alt="Full Apple">
+                </label>
+
+                <label for="half">
+                    <img src="Asstes/Half_apple.png" alt="Half Apple">
+                </label>
+
+                <label for="both">
+                    <img src="Asstes/Green-Apple.png" alt="Green Apples">
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product Information -->
+        <div class="product-details">
+
+            <h1>Delicious Apples</h1>
+
+            <p class="code">
+                COD: 45999
+            </p>
+
+
+            <!-- Price -->
+            <div class="price">
+                <span>R$</span> 7.93
+                <small>/ kg</small>
+            </div>
+
+
+            <!-- Color -->
+            <p class="label">
+                SELECT A COLOR
+            </p>
+
+            <div class="colors">
+
+                <span class="green"></span>
+
+                <span class="yellow"></span>
+
+                <span class="red"></span>
+
+            </div>
+
+
+            <!-- Benefits -->
+            <p class="label">
+                BENEFITS
+            </p>
+
+            <ul>
                 <li>Apples are nutritious</li>
                 <li>Apples may be good for weight loss</li>
                 <li>Apples may be good for bone health</li>
-                <li>They are linked to a lower risk of diabetes</li>
+                <li>They're linked to a lower risk of diabetes</li>
             </ul>
 
-            <button class="add-to-cart-btn">ADD TO CART</button>
-        </section>
-    </main>
 
-    <p class="footer-credit">Design from <u>dribbble shot</u> of <u>Rodrigo Ramos</u></p>
+            <!-- Button -->
+            <button>
+                ADD TO CART
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <p class="footer">
+        Design from <u>dribbble shot</u> of
+        <u>Rodrigo Ramos</u>
+    </p>
+
 </body>
+
 </html>
