@@ -9,7 +9,7 @@ This project was created as an assignment to practice HTML and CSS. It displays 
 ## 🚀 Technologies Used 
   
 * HTML5
-* CSS3
+* CSS3  
 
 ## 📂 Project Structure
 
